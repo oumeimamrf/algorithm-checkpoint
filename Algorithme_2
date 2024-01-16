@@ -1,0 +1,23 @@
+# Fonction pour calculer la somme des éléments distincts de deux ensembles
+def somme_elements_distincts(ensemble1, ensemble2):
+    distinct_elements = set()
+
+    # Parcourir l'ensemble 1
+    for element in ensemble1:
+        distinct_elements.add(element)
+
+    # Parcourir l'ensemble 2
+    for element in ensemble2:
+        distinct_elements.add(element)
+
+    # Calculer la somme des éléments distincts
+    somme = sum(distinct_elements)
+
+    return somme
+
+# Exemple d'utilisation
+ensemble1 = [3, 1, 7, 9]
+ensemble2 = [2, 4, 1, 9, 3]
+
+resultat = somme_elements_distincts(ensemble1, ensemble2)
+print("Résultat :", resultat)
