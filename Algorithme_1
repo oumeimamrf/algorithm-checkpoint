@@ -1,0 +1,19 @@
+# Initialisation des compteurs
+nombre_mots = 0
+nombre_voyelles = 0
+
+# Lecture de la phrase caractère par caractère
+phrase = input("Entrez une phrase se terminant par un point : ")
+
+for caractere in phrase:
+    # Comptage des mots
+    if caractere == ' ':
+        nombre_mots += 1
+
+    # Comptage des voyelles (en considérant les voyelles en majuscules et minuscules)
+    if caractere.lower() in ['a', 'e', 'i', 'o', 'u', 'y']:
+        nombre_voyelles += 1
+
+# Affichage des résultats
+print("Nombre de mots dans la phrase :", nombre_mots + 1)
+print("Nombre de voyelles dans la phrase :", nombre_voyelles)
